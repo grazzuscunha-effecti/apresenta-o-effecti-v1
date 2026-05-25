@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apresentação Effecti — Template V1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #EDEEF0;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding: 48px 64px;
+    color: #081128;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+
+  .logo {
+    height: 28px;
+    width: auto;
+  }
+
+  .badge {
+    font-size: 12px;
+    font-weight: 700;
+    background: #DCD4BA;
+    color: #242007;
+    padding: 8px 16px;
+    border-radius: 100px;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: #6B6C75;
+    margin-bottom: 56px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(8, 17, 40, 0.10);
+  }
+
+  .card-preview {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #EDEEF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-preview iframe {
+    width: 1920px;
+    height: 1080px;
+    border: none;
+    transform-origin: 0 0;
+    pointer-events: none;
+  }
+
+  .card-info {
+    padding: 20px 24px;
+    border-top: 1px solid #EDEEF0;
+  }
+
+  .card-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9A9BA3;
+    margin-bottom: 4px;
+  }
+
+  .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #081128;
+    margin-bottom: 4px;
+  }
+
+  .card-desc {
+    font-size: 13px;
+    color: #6B6C75;
+  }
+
+  footer {
+    margin-top: 80px;
+    font-size: 13px;
+    color: #9A9BA3;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="assets/marca-effecti.svg" alt="Effecti" class="logo">
+  <span class="badge">Template V1</span>
+</header>
+
+<h1>Apresentação Effecti</h1>
+<p class="subtitle">Template base de slides HTML — estrutura de referência para apresentações da Effecti.</p>
+
+<div class="grid">
+
+  <a class="card" href="capa-apresentação-effecti.html" target="_blank">
+    <div class="card-preview" id="preview-capa"></div>
+    <div class="card-info">
+      <div class="card-label">Capa</div>
+      <div class="card-title">Capa da apresentação</div>
+      <div class="card-desc">Hero card azul com ilustração e título principal</div>
+    </div>
+  </a>
+
+  <a class="card" href="slide-01-apresentação-effecti.html" target="_blank">
+    <div class="card-preview" id="preview-01"></div>
+    <div class="card-info">
+      <div class="card-label">Slide 01</div>
+      <div class="card-title">Dois blocos de texto</div>
+      <div class="card-desc">Duas colunas de texto em igual proporção</div>
+    </div>
+  </a>
+
+  <a class="card" href="slide-02-apresentação-effecti.html" target="_blank">
+    <div class="card-preview" id="preview-02"></div>
+    <div class="card-info">
+      <div class="card-label">Slide 02</div>
+      <div class="card-title">Texto + imagem lateral</div>
+      <div class="card-desc">Bloco de texto à esquerda e container de imagem à direita</div>
+    </div>
+  </a>
+
+  <a class="card" href="slide-03-apresentação-effecti.html" target="_blank">
+    <div class="card-preview" id="preview-03"></div>
+    <div class="card-info">
+      <div class="card-label">Slide 03</div>
+      <div class="card-title">Texto + imagem inferior</div>
+      <div class="card-desc">Dois blocos de texto acima e imagem em largura total abaixo</div>
+    </div>
+  </a>
+
+  <a class="card" href="slide-04-apresentação-effecti.html" target="_blank">
+    <div class="card-preview" id="preview-04"></div>
+    <div class="card-info">
+      <div class="card-label">Slide 04</div>
+      <div class="card-title">Texto e imagem por coluna</div>
+      <div class="card-desc">Dois blocos de texto, cada um com imagem própria abaixo</div>
+    </div>
+  </a>
+
+  <a class="card" href="slide-05-apresentação-effecti.html" target="_blank">
+    <div class="card-preview" id="preview-05"></div>
+    <div class="card-info">
+      <div class="card-label">Slide 05</div>
+      <div class="card-title">Imagem em destaque</div>
+      <div class="card-desc">Título e container de imagem em largura total</div>
+    </div>
+  </a>
+
+  <a class="card" href="contra-capa-apresentação-effecti.html" target="_blank">
+    <div class="card-preview" id="preview-contra"></div>
+    <div class="card-info">
+      <div class="card-label">Contra-capa</div>
+      <div class="card-title">Encerramento</div>
+      <div class="card-desc">Hero card com ilustração e mensagem de encerramento</div>
+    </div>
+  </a>
+
+</div>
+
+<footer>Effecti — Programa de Governança de Design System · effecti.com.br</footer>
+
+<script>
+  const slides = [
+    { id: 'preview-capa',    src: 'capa-apresentação-effecti.html' },
+    { id: 'preview-01',      src: 'slide-01-apresentação-effecti.html' },
+    { id: 'preview-02',      src: 'slide-02-apresentação-effecti.html' },
+    { id: 'preview-03',      src: 'slide-03-apresentação-effecti.html' },
+    { id: 'preview-04',      src: 'slide-04-apresentação-effecti.html' },
+    { id: 'preview-05',      src: 'slide-05-apresentação-effecti.html' },
+    { id: 'preview-contra',  src: 'contra-capa-apresentação-effecti.html' },
+  ];
+
+  slides.forEach(function(slide) {
+    var container = document.getElementById(slide.id);
+    var iframe = document.createElement('iframe');
+    iframe.src = slide.src;
+    iframe.scrolling = 'no';
+    container.appendChild(iframe);
+
+    iframe.addEventListener('load', function() {
+      var scale = container.offsetWidth / 1920;
+      iframe.style.transform = 'scale(' + scale + ')';
+      iframe.style.height = (container.offsetWidth / (16/9)) / scale + 'px';
+    });
+  });
+</script>
+
+</body>
+</html>
