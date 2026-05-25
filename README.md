@@ -2,6 +2,8 @@
 
 Template base de apresentação da Effecti em HTML. Desenvolvido para ser utilizado no **Claude Design** como estrutura de referência para a montagem de apresentações com padrões visuais consistentes da marca.
 
+**Preview:** [grazzuscunha-effecti.github.io/apresenta-o-effecti-v1](https://grazzuscunha-effecti.github.io/apresenta-o-effecti-v1/)
+
 ---
 
 ## O que é
