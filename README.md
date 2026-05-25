@@ -6,6 +6,16 @@ Template base de apresentação da Effecti em HTML. Desenvolvido para ser utiliz
 
 ---
 
+## Prompt para o Claude Design
+
+Para criar novas apresentações mantendo o mesmo design e estrutura, use o prompt padrão disponível em:
+
+**[`prompt-claude-design.md`](prompt-claude-design.md)**
+
+Cole o conteúdo desse arquivo como instrução inicial no Claude Design antes de descrever o conteúdo da sua apresentação. O prompt descreve o sistema visual completo — dimensões, tipografia, cores, componentes e layouts — garantindo consistência em qualquer apresentação gerada.
+
+---
+
 ## O que é
 
 Um conjunto de slides HTML em formato fixo **1920×1080px** que serve como fundação para apresentações da Effecti. Cada slide é um arquivo independente, pronto para ser aberto no browser ou importado como base no Claude Design.
