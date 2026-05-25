@@ -80,9 +80,6 @@
     width: 100%;
     aspect-ratio: 16/9;
     background: #EDEEF0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     position: relative;
   }
@@ -93,6 +90,9 @@
     border: none;
     transform-origin: 0 0;
     pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .card-info {
@@ -228,7 +228,6 @@
     iframe.addEventListener('load', function() {
       var scale = container.offsetWidth / 1920;
       iframe.style.transform = 'scale(' + scale + ')';
-      iframe.style.height = (container.offsetWidth / (16/9)) / scale + 'px';
     });
   });
 </script>
