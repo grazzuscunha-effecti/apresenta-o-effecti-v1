@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>Apresentação Effecti — Slide 03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #EDEEF0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .slide {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* TOPBAR */
+  .topbar-wrapper {
+    width: 100%;
+    padding: 0 64px 0;
+    flex-shrink: 0;
+    background: transparent;
+  }
+
+  .topbar {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-effecti-marca {
+    height: 32px;
+    width: auto;
+  }
+
+  .topbar-title {
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #BFC0C8;
+    border: 1px solid #BFC0C8;
+    border-radius: 8px;
+    padding: 8px 28px;
+    text-transform: uppercase;
+  }
+
+  .topbar-url {
+    font-size: 14px;
+    color: #081128;
+    letter-spacing: 0;
+  }
+
+  /* CONTENT */
+  .content {
+    flex: 1;
+    min-height: 0;
+    padding: 48px 64px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+  }
+
+  /* HEADER: badges + headline */
+  .header-area {
+    flex-shrink: 0;
+  }
+
+  .section-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #DCD4BA;
+    color: #242007;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 14px 20px;
+    border-radius: 100px;
+    width: fit-content;
+  }
+
+  .headline {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #081128;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-top: 48px;
+  }
+
+  /* COLUMNS — altura reduzida */
+  .columns {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    overflow: hidden;
+  }
+
+  .col {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .col-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #081128;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .col-body {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #081128;
+    letter-spacing: -0.01em;
+  }
+
+  .token {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin: 0 2px;
+    vertical-align: middle;
+  }
+
+  .token-warm  { background: #DCD4BA; color: #242007; }
+  .token-blue  { background: #A7EAFB; color: #002738; }
+  .token-green { background: #C2E0B1; color: #092800; }
+  .token-orange{ background: #FFCBAE; color: #441500; }
+  .token-yellow{ background: #F6E4AF; color: #3F3607; }
+
+  /* IMAGE CONTAINER — ocupa o espaço de dois blocos */
+  .bottom-image {
+    flex: 2;
+    min-height: 0;
+    background: #D9DADC;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col-image-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #9A9BA3;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="topbar-wrapper">
+    <div class="topbar">
+      <div class="logo-area">
+        <img src="marca-effecti.svg" alt="Effecti" class="logo-effecti-marca">
+      </div>
+      <div class="topbar-title">Programa de Governança de Design System.</div>
+      <div class="topbar-url">effecti.com.br</div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="header-area">
+      <div style="display: flex; gap: 8px; align-items: center;">
+        <div class="section-tag">01 | TEXTO 01</div>
+        <div class="section-tag" style="background: #A7EAFB; color: #002738;">02 | TEXTO 02</div>
+        <div class="section-tag" style="background: #C2E0B1; color: #092800;">03 | TEXTO 03</div>
+        <div class="section-tag" style="background: #FFCBAE; color: #441500;">04 | TEXTO 04</div>
+        <div class="section-tag" style="background: #F6E4AF; color: #3F3607;">05 | TEXTO 05</div>
+      </div>
+      <h1 class="headline">Identidade não se improvisa.<br>Ela se governa.</h1>
+    </div>
+
+    <div class="columns">
+      <div class="col">
+        <p class="col-title">Camada 01 — Decisão.</p>
+        <p class="col-body">É a alma da marca. O ponto de partida de qualquer decisão visual. Antes de qualquer token, antes de qualquer componente, existe uma filosofia: o propósito, a essência, a personalidade e os valores da Effecti. É aqui que vivem os Princípios de Design: <span class="token token-warm">Clareza acima de tudo</span> e <span class="token token-orange">Calor humano como antídoto</span>. Tudo que é construído nas camadas seguintes precisa ser justificável a partir desta.</p>
+      </div>
+      <div class="col">
+        <p class="col-title">Camada 02 — Semântica.</p>
+        <p class="col-body">É a intenção nomeada. Os tokens semânticos traduzem a filosofia da camada anterior em decisões com nome e significado. Não são valores arbitrários de cor ou espaçamento. São declarações. Uma cor não é apenas uma cor: é uma postura. Um espaçamento não é apenas um número: é um ritmo. <span class="token token-green">O nome nunca muda</span>. O valor pode evoluir.</p>
+      </div>
+    </div>
+
+    <div class="bottom-image">
+      <span class="col-image-label">Imagem</span>
+    </div>
+
+  </div>
+
+</div>
+<script>
+  (function () {
+    var slide = document.querySelector('.slide');
+    function fit() {
+      var s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+      slide.style.transform = 'scale(' + s + ')';
+      slide.style.transformOrigin = '0 0';
+      slide.style.position = 'absolute';
+      slide.style.left = Math.max(0, (window.innerWidth - 1920 * s) / 2) + 'px';
+      slide.style.top = Math.max(0, (window.innerHeight - 1080 * s) / 2) + 'px';
+    }
+    fit();
+    window.addEventListener('resize', fit);
+  })();
+</script>
+</body>
+</html>

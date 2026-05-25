@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>Arrow DS — Capa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background: #EDEEF0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .slide {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* TOPBAR */
+  .topbar-wrapper {
+    width: 100%;
+    padding: 0 64px 0;
+    flex-shrink: 0;
+    background: transparent;
+  }
+
+  .topbar {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-effecti-marca {
+    height: 32px;
+    width: auto;
+  }
+
+  .topbar-title {
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #BFC0C8;
+    border: 1px solid #BFC0C8;
+    border-radius: 8px;
+    padding: 8px 28px;
+    text-transform: uppercase;
+  }
+
+  .topbar-url {
+    font-size: 14px;
+    color: #081128;
+    letter-spacing: 0;
+  }
+
+  /* CONTENT */
+  .content {
+    flex: 1;
+    padding: 136px 64px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* HERO BLOCK */
+  .hero {
+    width: 100%;
+    height: 100%;
+    background: #A7EAFB;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 64px;
+  }
+
+  .hero-text {
+    margin-left: auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #081128;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #F6E4AF;
+    color: #3F3607;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 14px 20px;
+    border-radius: 100px;
+    width: fit-content;
+  }
+
+  /* ilustração placeholder */
+  .hero-illustration {
+    position: absolute;
+    left: 80px;
+    top: 40%;
+    transform: translateY(-50%) rotate(-10deg);
+    width: 792px;
+    height: 792px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="topbar-wrapper">
+    <div class="topbar">
+      <div class="logo-area">
+        <img src="marca-effecti.svg" alt="Effecti" class="logo-effecti-marca">
+      </div>
+
+      <div class="topbar-url">effecti.com.br</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="hero">
+
+      <div class="hero-illustration">
+        <img src="ilustra-somos-tecnológicos-effecti.svg" alt="Ilustração" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+
+      <div class="hero-text">
+        <h1 class="hero-title">Programa de<br>Governança<br>de Design System.</h1>
+        <div class="hero-tag">SISTEMA QUE GARANTE A IDENTIDADE DO NEGÓCIO EM QUALQUER SUPERFÍCIE.</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

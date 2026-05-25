@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>Apresentação Effecti — Contra-capa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background: #EDEEF0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .slide {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* TOPBAR */
+  .topbar-wrapper {
+    width: 100%;
+    padding: 0 64px 0;
+    flex-shrink: 0;
+    background: transparent;
+  }
+
+  .topbar {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-effecti-marca {
+    height: 32px;
+    width: auto;
+  }
+
+  .topbar-url {
+    font-size: 14px;
+    color: #081128;
+    letter-spacing: 0;
+  }
+
+  /* CONTENT */
+  .content {
+    flex: 1;
+    padding: 136px 64px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* HERO BLOCK */
+  .hero {
+    width: 100%;
+    height: 100%;
+    background: #A7EAFB;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 64px;
+  }
+
+  .hero-text {
+    margin-left: auto;
+    margin-right: 5%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #081128;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .hero-illustration {
+    position: absolute;
+    left: 80px;
+    top: 38%;
+    transform: translateY(-50%) rotate(-10deg);
+    width: 925px;
+    height: 925px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="topbar-wrapper">
+    <div class="topbar">
+      <div class="logo-area">
+        <img src="marca-effecti.svg" alt="Effecti" class="logo-effecti-marca">
+      </div>
+      <div class="topbar-url">effecti.com.br</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="hero">
+
+      <div class="hero-illustration">
+        <img src="ilustra-01-freemium-effecti.svg" alt="Ilustração" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+
+      <div class="hero-text">
+        <h1 class="hero-title">Obrigado!</h1>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

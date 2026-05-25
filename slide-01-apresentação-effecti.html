@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1920">
+<title>Arrow DS — 05 | A Estrutura do Sistema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background: #EDEEF0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .slide {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* TOPBAR */
+  .topbar-wrapper {
+    width: 100%;
+    padding: 0 64px 0;
+    flex-shrink: 0;
+    background: transparent;
+  }
+
+  .topbar {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-effecti-marca {
+    height: 32px;
+    width: auto;
+  }
+
+  .topbar-title {
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #BFC0C8;
+    border: 1px solid #BFC0C8;
+    border-radius: 8px;
+    padding: 8px 28px;
+    text-transform: uppercase;
+  }
+
+  .topbar-url {
+    font-size: 14px;
+    color: #081128;
+    letter-spacing: 0;
+  }
+
+  /* CONTENT */
+  .content {
+    flex: 1;
+    padding: 48px 64px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .section-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #DCD4BA;
+    color: #242007;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 14px 20px;
+    border-radius: 100px;
+    width: fit-content;
+  }
+
+  .headline {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #081128;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-top: 48px;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 48px;
+  }
+
+  .col-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #081128;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .col-body {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #081128;
+    letter-spacing: -0.01em;
+  }
+
+  .token {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin: 0 2px;
+    vertical-align: middle;
+  }
+
+  .token-warm {
+    background: #DCD4BA;
+    color: #242007;
+  }
+
+  .token-blue {
+    background: #A7EAFB;
+    color: #002738;
+  }
+
+  .token-green {
+    background: #C2E0B1;
+    color: #092800;
+  }
+
+  .token-orange {
+    background: #FFCBAE;
+    color: #441500;
+  }
+
+  .token-yellow {
+    background: #F6E4AF;
+    color: #3F3607;
+  }
+
+
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="topbar-wrapper">
+    <div class="topbar">
+      <div class="logo-area">
+        <img src="marca-effecti.svg" alt="Effecti" class="logo-effecti-marca">
+      </div>
+      <div class="topbar-title">Programa de Governança de Design System.</div>
+      <div class="topbar-url">effecti.com.br</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div>
+    <div style="display: flex; gap: 8px; align-items: center;">
+      <div class="section-tag">01 | TEXTO 01</div>
+      <div class="section-tag" style="background: #A7EAFB; color: #002738;">02 | TEXTO 02</div>
+      <div class="section-tag" style="background: #C2E0B1; color: #092800;">03 | TEXTO 03</div>
+      <div class="section-tag" style="background: #FFCBAE; color: #441500;">04 | TEXTO 04</div>
+      <div class="section-tag" style="background: #F6E4AF; color: #3F3607;">05 | TEXTO 05</div>
+    </div>
+      <h1 class="headline">Identidade não se improvisa.<br>Ela se governa.</h1>
+    </div>
+
+    <div class="columns">
+      <div>
+        <p class="col-title">Camada 01 — Decisão.</p>
+        <p class="col-body">É a alma da marca. O ponto de partida de qualquer decisão visual. Antes de qualquer token, antes de qualquer componente, existe uma filosofia: o propósito, a essência, a personalidade e os valores da Effecti. É aqui que vivem os Princípios de Design: <span class="token token-warm">Clareza acima de tudo</span> e <span class="token token-orange">Calor humano como antídoto</span>. Tudo que é construído nas camadas seguintes precisa ser justificável a partir desta.</p>
+        <p class="col-body" style="margin-top: 20px;">A Effecti opera em um mercado que carrega peso por natureza. Licitação é burocracia. É processo. É linguagem jurídica densa, prazos rígidos, sistemas legados que parecem ter sido construídos para afastar, não para acolher. Um mercado que historicamente colocou o processo acima da pessoa e que naturalmente produziu produtos frios, pragmáticos, distantes.</p>
+        <p class="col-body" style="margin-top: 20px;">A Effecti chegou nesse mercado com uma declaração silenciosa mas poderosa: não precisa ser assim. Que é possível <span class="token token-blue">Crescer com liberdade</span> dentro de um sistema complexo. Que tecnologia pode ser empática. Quando a filosofia está clara, os tokens deixam de ser escolhas estéticas e se tornam declarações de identidade.</p>
+        <p class="col-body" style="margin-top: 20px;">Por muitos anos a Effecti construiu com velocidade. Lançou produtos, desenvolveu features, expandiu o ecossistema. Essa capacidade de execução é real e valiosa. Mas velocidade sem direção acumula dívida, não só técnica, mas de identidade. Cada decisão tomada sem uma fonte de verdade compartilhada é um tijolo assentado sem fundação.</p>
+      </div>
+      <div>
+        <p class="col-title">Camada 02 — Semântica.</p>
+        <p class="col-body">É a intenção nomeada. Os tokens semânticos traduzem a filosofia da camada anterior em decisões com nome e significado. Não são valores arbitrários de cor ou espaçamento. São declarações. Uma cor não é apenas uma cor: é uma postura. Um espaçamento não é apenas um número: é um ritmo. <span class="token token-green">O nome nunca muda</span>. O valor pode evoluir.</p>
+        <p class="col-body" style="margin-top: 20px;">Essa distinção é o que torna o sistema escalável e a marca imutável. Sem essa fundação, a marca não desaparece de uma vez. Ela se dilui. Silenciosamente. Uma superfície de cada vez. Uma decisão tomada no vácuo, um componente construído sem intenção, uma cor escolhida por conveniência.</p>
+        <p class="col-body" style="margin-top: 20px;">A resposta não é um novo componente. Não é uma atualização de paleta. Não é um redesign. É um sistema de decisão. Uma filosofia que antecede qualquer ferramenta. Porque quando você sabe quem é, usa qualquer ferramenta para expressar isso. Quando não sabe, deixa a ferramenta decidir por você.</p>
+        <p class="col-body" style="margin-top: 20px;">Qualquer superfície, qualquer tecnologia, qualquer output de inteligência artificial que consumir essa lógica já nasce Effecti. O sistema carrega a filosofia. E a filosofia se propaga sozinha. Isso é <span class="token token-yellow">Autonomia Inteligente</span>.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
